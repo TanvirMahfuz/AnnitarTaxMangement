@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<script>
+    function clicked(){
+        window.location.href="http://localhost:8080/PreHome"
+    }
+    function viewUserProfile(){
+        window.location.href="http://localhost:8080/ViewUserProfile"
+    }
+    function seeLawyers(){
+        window.location.href="http://localhost:8080/seeLawyerList"
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            height: 30vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row;
+
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .btn-group > .btn {
+            margin: 1rem; /* Add spacing between buttons */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="btn-group" role="group">
+        <button class="btn btn-custom btn-lg" onclick="viewUserProfile()">View Profile</button>
+        <button class="btn btn-outline-secondary btn-lg" onclick="clicked()">Log Out</button>
+        <button class="btn btn-custom btn-lg" onclick="seeLawyers()">See Lawyers</button>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

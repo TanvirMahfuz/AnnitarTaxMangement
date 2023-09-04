@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<script>
+  function clicked1(){
+      window.location.href="http://localhost:8080/NewUser"
+  }
+  function clicked2(){
+      window.location.href="http://localhost:8080/NewLawyer"
+  }
+  function clicked3(){
+      window.location.href="http://localhost:8080/seeLawyerList"
+  }
+
+</script>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../bootstrap/CSS/PreHome.css">
+    <meta charset="UTF-8">
+
+    <style>
+       </style>
+</head>
+<body class="body" id="home-wall">
+<section >
+This is PreHome<br>
+<div class="container">
+
+    <button class="btn btn-custom btn-lg" onclick="clicked1()">Create User Account </button>
+    <button class="btn btn-custom btn-lg" onclick="clicked2()">Create Lawyer Account </button>
+    <button class="btn btn-custom btn-lg" onclick="clicked3()"> See Lawyer List </button><br><br>
+    <p><strong>Note: You cant choose a lawyer unless you have an account</strong></p>
+
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

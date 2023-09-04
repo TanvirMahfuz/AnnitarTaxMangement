@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<script>
+  function clicked(){
+    window.location.href="http://localhost:8080/Home"
+  }
+
+</script>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Set your desired background color */
+    }
+    .container {
+      padding: 50px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      margin-top: 50px;
+    }
+    .btn-custom {
+      background-color: #007bff; /* Set your desired button color */
+      color: white;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+<h1>Submitted Values</h1>
+<p><strong>User Id:</strong> <span th:text="${userTH.id}"></span></p>
+<p><strong>Name:</strong> <span th:text="${userTH.name}"></span></p>
+  <p><strong>lawyerName:</strong> <span th:text="${userTH.getLawyer().getLawyerName()}"></span></p>
+  <p><strong>Salay Income:</strong> <span th:text="${userTH.salary}"></span></p>
+  <p><strong>Property Vlaue:</strong> <span th:text="${userTH.propertyValue}"></span></p>
+  <p><strong>share Value:</strong> <span th:text="${userTH.shareValue}"></span></p>
+  <p><strong>net Income:</strong> <span th:text="${userTH.netIncome}"></span></p>
+<button class="btn btn-custom" onclick="clicked()">Home</button><br><br>
+  <form th:action="@{/deleteUser}" method="post">
+    <input type="hidden">
+    <button type="submit" class="btn- btn-danger">Delete Account</button>
+  </form>
+
+</div>
+</body>
+</html>

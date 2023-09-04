@@ -1,0 +1,23 @@
+#home-wall{
+    width: 100vw;
+    height: 75vh;
+    background:url('../Images/HomeBacground.jpeg');
+    font-weight: 200;
+}
+
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem; /* Add gap between items */
+}
+.btn-custom {
+    background-color: #859F93;
+    color: white;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #57A35F;
+}

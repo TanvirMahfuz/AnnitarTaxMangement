@@ -1,0 +1,20 @@
+form{
+    padding: 0px 40px;
+}
+.form-container {
+    padding: 30px 35px;
+}
+/* Add some spacing between form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+a {
+    color: #2e8da0;
+}
+a:hover {
+    color: #2e8da0;
+}
+#image-container{
+    width: 50%;
+    margin: auto;
+}
